@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: stg_greenery_events
+    description: Contains information on each unique event on the greenery platform

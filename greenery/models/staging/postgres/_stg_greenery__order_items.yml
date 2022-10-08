@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: stg_greenery_order_items
+    description: Contains information about items included in greenery orders

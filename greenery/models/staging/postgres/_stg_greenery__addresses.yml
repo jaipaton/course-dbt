@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: stg_greenery_addresses
+    description: Contains address information for each customer
+    # columns:
+    #   - name: name
+    #     tests:
+    #       - not_null

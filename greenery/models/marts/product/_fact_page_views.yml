@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: fact_page_views
+    description: Fact table of only page-view events
+    columns:
+      - name: EVENT_GUID
+        tests:
+          - not_null
+          - unique
+      - name: USER_GUID
+      - name: PAGE_URL
+      - name: CREATED_AT_UTC
+        tests:
+          - not_null
+      - name: EVENT_TYPE
+      - name: ORDER_GUID
+      - name: PRODUCT_GUID

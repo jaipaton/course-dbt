@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: fact_orders
+    description: Contains factual order data at the order grain
+    columns:
+      - name: ORDER_GUID
+        tests:
+          - not_null
+          - unique
+      - name: USER_GUID
+        tests:
+          - not_null
+      - name: PROMO_DESC
+      - name: ADDRESS_ID
+      - name: CREATED_AT_UTC
+        tests:
+          - not_null
+      - name: ORDER_COST
+      - name: SHIPPING_COST
+      - name: ORDER_TOTAL_COST
+      - name: TRACKING_ID
+      - name: SHIPPING_SERVICE
+      - name: ESTIMATED_DELIVERY_AT_UTC
+      - name: DELIVERED_AT_UTC
+      - name: ORDER_STATUS
+        tests:
+          - not_null

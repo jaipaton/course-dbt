@@ -113,4 +113,5 @@ How many users do we have?
     from sessions_per_hour`
 
 ### Answer:
+
 On average there are 61.25 unique sessions per hour

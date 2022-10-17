@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: user_order_facts
+    description: Blend of User & Order data at the User grain. 
+    columns:
+      - name: USER_GUID
+        tests:
+          - not_null
+          - unique
+      - name: FIRST_NAME
+      - name: LAST_NAME
+      - name: EMAIL
+      - name: PHONE_NUMBER
+      - name: CREATED_AT_UTC
+      - name: UPDATED_AT_UTC
+        tests:
+          - not_null
+      - name: ADDRESS_ID
+      - name: SUM_ORDER_COSTS
+      - name: SUM_SHIPPING_COSTS
+      - name: AVG_ORDER_COST
+      - name: AVG_SHIPPING_COST
+      - name: COUNT_ORDERS

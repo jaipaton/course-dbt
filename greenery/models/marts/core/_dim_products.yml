@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: dim_products
+    description: Contains dimensional product data 
+    columns:
+      - name: product_guid
+        tests:
+          - not_null
+          - unique
+      - name: name
+      - name: price
+        tests:
+          - positive_values
+      - name: inventory

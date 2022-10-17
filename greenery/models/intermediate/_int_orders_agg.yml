@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: int_orders_agg
+    description: Aggregate Orders data (user - grain) to be ingested by downstream fact & dim tables.
+    columns:
+      - name: USER_GUID
+        tests:
+          - not_null
+          - unique
+      - name: SUM_ORDER_COST
+      - name: SUM_SHIPPING_COST
+      - name: COUNT_ORDERS
+      - name: AVG_ORDER_COST
+      - name: AVG_SHIPPING_COST

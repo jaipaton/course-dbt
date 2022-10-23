@@ -1,0 +1,14 @@
+version: 2
+
+
+macros:
+  - name: pivot_values
+    description: > 
+      'Returns new column values for each unique entry in a given list of dimensions. Passes count of each value for each row in results'
+    arguments:
+      - name: column_name
+        type: 'Relation'
+        description: 'Column Name value'
+      - name: table_ref
+        type: 'Relation'
+        description: 'Reference to the relevant table'

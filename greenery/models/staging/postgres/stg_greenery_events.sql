@@ -19,7 +19,8 @@ SELECT
     created_at as created_at_utc,
     event_type,
     order_id as order_guid,
-    product_id as product_guid
+    product_id as product_guid,
+    session_id as event_session_guid
 FROM events_source
 )
 

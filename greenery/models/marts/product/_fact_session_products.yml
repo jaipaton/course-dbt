@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: fact_session_products
+    description: Session data held at the Session & Product grain with Product data left joined to Session. 
+    columns:
+      - name: event_session_guid
+      - name: event_order_id
+      - name: product_id
+      - name: product_name
+
+
+
+    

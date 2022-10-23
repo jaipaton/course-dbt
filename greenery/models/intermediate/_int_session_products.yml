@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: int_session_products
+    description: Session data held at the Session & Product grain with Product data left joined to Session. 

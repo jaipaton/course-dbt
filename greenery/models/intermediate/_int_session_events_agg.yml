@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: int_session_events_agg
+    description: Aggregate Session Event data. Grain = Session. Provides automated summation of event type records. Leverages macro to pivot the data
+    columns:
+      - name: user_guid
+        tests:
+          - not_null
+          - unique
+      - name: event_session_guid
+        tests:
+          - not_null
+          - unique

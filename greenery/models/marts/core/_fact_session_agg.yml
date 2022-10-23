@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: fact_session_agg
+    description: Contains factual session-level data. Aggregates event_type data

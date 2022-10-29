@@ -7,7 +7,6 @@ models:
       - name: user_guid
         tests:
           - not_null
-          - unique
       - name: event_session_guid
         tests:
           - not_null
